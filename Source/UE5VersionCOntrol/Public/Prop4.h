@@ -4,26 +4,23 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Prop.generated.h"
+#include "Prop4.generated.h"
 
 UCLASS()
-class UE5VERSIONCONTROL_API AProp : public AActor
+class UE5VERSIONCONTROL_API AProp4 : public AActor
 {
 	GENERATED_BODY()
-
-public:
+	
+public:	
 	// Sets default values for this actor's properties
-	AProp();
+	AProp4();
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:
+public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-private:
-	UPROPERTY(EditAnywhere)
-	class UStaticMeshComponent* MeshComp;
 };
